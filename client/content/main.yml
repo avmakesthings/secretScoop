@@ -1,5 +1,72 @@
 name: Secret Scoop
-headlines: 
-  - Wow. It's so good!
-  - Catch us at Eat Real Festival 2014!
-  - Thai goodness
+galleryItems:
+  -
+    headline: thai gelato!
+    subheadline: Handmade ice-cream with the flavors of thailand
+    button: Order now
+    image: /content/img/home_main.jpg
+  -
+    headline: Catch us at Eat Real Festival 2014!
+    subheadline: Handmade ice-cream with the flavors of thailand
+    button: Order now
+    image: /content/img/home_main.jpg
+  -
+    headline: thai gelato2!
+    subheadline: Handmade ice-cream with the flavors of thailand
+    button: Order now
+    image: /content/img/home_main.jpg
+aboutItems:
+  -
+    headline: Meet the chef
+    who: Funn Fisher
+    description: Handmade ice-cream with the flavors of thailand
+    description_long: Order now
+    image1: /content/img/about_funn-02.jpg
+    image2: /content/img/home_main.jpg
+  -
+    headline: About
+    who: Secret Scoop
+    description: Handmade ice-cream with the flavors of thailand
+    description_long: Order now
+    image1: /content/img/home_main.jpg
+    image2: /content/img/home_main.jpg
+  -
+    headline: Make your event even tastier...
+    who: We can help
+    description: We come to you.
+    description_long: Order now
+    image1: /content/img/home_main.jpg
+    image2: /content/img/home_main.jpg
+eventItems:
+  -
+    type: Weddings
+    description: Handmade ice-cream with the flavors of thailand
+    description_long: Order now
+    image1: /content/img/home_main.jpg
+    image2: /content/img/home_main.jpg
+  -
+    type: Parties
+    description: Handmade ice-cream with the flavors of thailand
+    description_long: Order now
+    image1: /content/img/home_main.jpg
+    image2: /content/img/home_main.jpg
+  -
+    type: Corporate functions
+    description: Handmade ice-cream with the flavors of thailand
+    description_long: Order now
+    image1: /content/img/home_main.jpg
+    image2: /content/img/home_main.jpg
+  -
+    type: Catering
+    description: Handmade ice-cream with the flavors of thailand
+    description_long: Order now
+    image1: /content/img/home_main.jpg
+    image2: /content/img/home_main.jpg
+contactItems:
+    name: Secret Scoop
+    phone: +1 510 444 4444
+    address: 123 Fake St
+    email: info@secretscoop.com
+    facebook: thai gelato!
+    twitter: thai gelato!
+

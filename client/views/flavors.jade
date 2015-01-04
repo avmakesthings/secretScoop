@@ -1,0 +1,29 @@
+// Featured flavor
+each item, index in flavorInfo.flavorItems
+  if item.featured == 'y'
+    .row.featurette
+      .col-md-5
+        img.featurette-image.img-responsive(src=item.image, alt='Featured image')
+      .col-md-7
+        h2.featurette-heading
+          | Flavor of the month
+          span.text-muted &#10097; #{item.flavor}
+        p.lead
+          | #{item.description_long}
+        p
+          a.btn.btn-default(href='#', role='button') #{item.button}
+    hr.featurette-divider
+// Flavors
+.row
+  each item, index in flavorInfo.flavorItems
+    if index >= 0 
+      .col-lg-4
+        img.img-circle(src=item.image, alt='Flavor', style='width: 140px; height: 140px;')
+        h2 #{item.flavor}
+        p
+          | #{item.description}
+        //- p
+      //-     a.btn.btn-default(href='#', role='button') #{item.button}
+      //- // /.col-lg-4
+// /.row
+hr.featurette-divider

@@ -11,17 +11,17 @@ app.set('view engine', 'jade')
 app.use(express.logger('dev'))
 app.use(express.static(__dirname + '/client'))
 
-function loadInfo (dir) {
-	file = dir + ("/main.yml")
+function loadInfo (file) {
 	info = YAML.load(file)
-	console.log("\n" + dir +"\n")
+	console.log("\n" + file +"\n")
 	console.log(JSON.stringify(info,undefined,2));
 	return info
 }
 
 app.get('/', function (req, res) {
   res.render('carousel.jade', { 
-  	info : loadInfo ( __dirname + '/client/content'),
+  	mainInfo : loadInfo ( __dirname + '/client/content/main.yml'),
+  	flavorInfo : loadInfo ( __dirname + '/client/content/flavors.yml'),
   	pathToAssets : '/bower_components/bootstrap',
 	pathToSelectedTemplateWithinBootstrap : '/stylesheets',
 	pathToImages : '/content/img'
