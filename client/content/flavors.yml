@@ -5,7 +5,7 @@ flavorItems:
     description_long: A flavor ubiquitous with Thailand ....etc etc
     button: Order now
     image: /content/img/flavor_thai-iced-tea.jpg
-    featured: y
+    featured: y-left
     tags:
     link: 
   -
@@ -13,7 +13,7 @@ flavorItems:
     description: Handmade ice-cream with the flavors of thailand
     button: Order now
     image: /content/img/flavor_passion-fruit.jpg
-    featured: y
+    featured: y-right
     tags: vegan 
     link: 
   -

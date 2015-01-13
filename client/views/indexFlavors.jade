@@ -1,0 +1,32 @@
+.container-fluid
+  // Featured flavor
+  each item, index in _flavorInfo.flavorItems
+    if item.featured == 'y-left'
+      .col-md-7
+        img.featurette-image.img-responsive(src=item.image, alt='Featured image', style='disply:inline; min-width:100%; height: auto;' )
+        //- .col-md-7
+        //-   h2.featurette-heading
+        //-     | Flavor of the month
+        //-     span.text-muted &#10097; #{item.flavor}
+        //-   p.lead
+        //-     | #{item.description_long}
+        //-   p
+        //-     a.btn.btn-default(href='#', role='button') #{item.button}
+    else if item.featured == 'y-right'
+      .col-md-5
+        img.featurette-image.img-responsive(src=item.image, alt='Featured image', style='disply:inline; min-width:100%; height: auto;' )
+  // Flavors
+.container
+  hr.featurette-divider
+  .row
+    each item, index in _flavorInfo.flavorItems
+      if index >= 0 
+        .col-lg-4
+          img.img-circle(src=item.image, alt='Flavor', style='width: 140px; height: 140px;')
+          h2 #{item.flavor}
+          p
+            | #{item.description}
+          //- p
+        //-     a.btn.btn-default(href='#', role='button') #{item.button}
+        //- // /.col-lg-4
+  // /.row

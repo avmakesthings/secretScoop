@@ -7,7 +7,7 @@
     li(data-target='#myCarousel', data-slide-to='1')
     li(data-target='#myCarousel', data-slide-to='2')
   .carousel-inner
-    each item, index in mainInfo.galleryItems
+    each item, index in _mainInfo.galleryItems
       if index == 0 
         .item.active
           img(src=item.image, alt='First slide')
