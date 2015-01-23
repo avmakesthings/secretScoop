@@ -16,6 +16,11 @@ text {
 
 }
 
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 //Buttons
 .btn-primary {
   background-color: #ff9999;
@@ -89,9 +94,16 @@ text {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
-  margin-bottom: 60px;
+  height: 800px;
+  margin-bottom: 15px;
+  data-wrap: false;
 }
+
+.carousel-inner{
+  height: 100%;
+}
+
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -129,12 +141,17 @@ text {
   margin-left: 10px;
 }
 
+.col-lg-4 {
+  text-align: center;
+}
+
 
 /* Featurettes
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 15px 0; /* Space out the Bootstrap <hr> more */
+  border-top: 0;
 }
 
 /* Thin out the marketing headings */
@@ -143,6 +160,18 @@ text {
   line-height: 1;
   letter-spacing: -1px;
 }
+
+/* Change row thickness */
+.row.medium {
+  height: 500px;
+  overflow: hidden;
+}
+
+.row.featurette{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 
 
 /* RESPONSIVE CSS
@@ -161,6 +190,12 @@ text {
     padding-right: 0;
     padding-left: 0;
   }
+
+  @media (min-width: 768px) {
+  .carousel-caption {
+    top: 100%;  
+  }
+}
 
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
@@ -182,5 +217,15 @@ text {
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
+  }
+  .col-md-7 {
+    padding-right: 7.5px;
+    height: 600px;
+    overflow: hidden;
+  }
+  .col-md-5 {
+    padding-left: 7.5px;
+    height: 600px;
+    overflow: hidden;
   }
 }
