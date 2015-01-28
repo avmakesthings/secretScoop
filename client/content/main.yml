@@ -1,20 +1,20 @@
 name: Secret Scoop
 galleryItems:
   -
-    headline: thai gelato!
-    subheadline: Handmade ice-cream with the flavors of thailand
+    headline: THAI GELATO
+    subheadline: Handmade ice-cream with the flavors of Thailand
     button: Order now
     image: /content/img/home_main.jpg
-  -
-    headline: Catch us at Eat Real Festival 2014!
-    subheadline: Handmade ice-cream with the flavors of thailand
-    button: Order now
-    image: /content/img/home_main.jpg
-  -
-    headline: thai gelato2!
-    subheadline: Handmade ice-cream with the flavors of thailand
-    button: Order now
-    image: /content/img/home_main.jpg
+  # -
+  #   headline: Catch us at Eat Real Festival 2014!
+  #   subheadline: Handmade ice-cream with the flavors of thailand
+  #   button: Order now
+  #   image: /content/img/home_main.jpg
+  # -
+  #   headline: thai gelato2!
+  #   subheadline: Handmade ice-cream with the flavors of thailand
+  #   button: Order now
+  #   image: /content/img/home_main.jpg
 aboutItems:
   -
     headline: Meet the chef
@@ -37,6 +37,13 @@ aboutItems:
     description_long: Order now
     image1: /content/img/home_main.jpg
     image2: /content/img/home_main.jpg
+marketingItems:
+  -
+    headline: About Secret Scoop
+    caption: Funn Fisher serves up Secret Scoop ...
+    paragraph: Handmade ice-cream with the flavors of thailand
+    button: about
+    image: /content/img/Services_Special Events 03.jpg
 eventItems:
   -
     type: Weddings

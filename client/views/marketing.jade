@@ -1,27 +1,47 @@
-.container-fluid.marketing(id='info')
-  // START THE FEATURETTES
-  hr.featurette-divider
-  each item, index in _mainInfo.aboutItems
-    if index % 2 == 0
-      .row.featurette 
-        .col-md-7
-          h2.featurette-heading
-            | #{item.headline}
-            span.text-muted #{item.who}
-          p.lead
-            |  #{item.description}
-        .col-md-5
-          img.featurette-image.img-responsive(src=item.image1, alt='Image')
-      hr.featurette-divider
-    else 
-      .row.featurette
-        .col-md-5
-          img.featurette-image.img-responsive(src=item.image1, alt='Image')
-        .col-md-7
-          h2.featurette-heading
-            | #{item.headline}
-            span.text-muted #{item.who}
-          p.lead
-            | #{item.description}
-      hr.featurette-divider
-  // /END THE FEATURETTES
+.container-fluid
+  row.whitespace
+    .col-md-4
+    .col-md-4
+      h1.centered hello
+      h1.centered.para world
+    .col-md-4
+
+.container-fluid
+  each item, index in _mainInfo.marketingItems
+    row.featurette
+      .col-md-8
+        img.featurette-image.img-responsive(src=src=item.image, alt='Image')
+      .col-md-4
+        h1 #{item.headline}
+        p #{item.paragraph}
+        p
+          a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
+
+
+//- .container-fluid.marketing(id='info')
+  //- // START THE FEATURETTES
+  //- hr.featurette-divider
+  //- each item, index in _mainInfo.aboutItems
+  //-   if index % 2 == 0
+  //-     .row.featurette 
+  //-       .col-md-7
+  //-         h2.featurette-heading
+  //-           | #{item.headline}
+  //-           span.text-muted #{item.who}
+  //-         p.lead
+  //-           |  #{item.description}
+  //-       .col-md-5
+  //-         img.featurette-image.img-responsive(src=item.image1, alt='Image')
+  //-     hr.featurette-divider
+  //-   else 
+  //-     .row.featurette
+  //-       .col-md-5
+  //-         img.featurette-image.img-responsive(src=item.image1, alt='Image')
+  //-       .col-md-7
+  //-         h2.featurette-heading
+  //-           | #{item.headline}
+  //-           span.text-muted #{item.who}
+  //-         p.lead
+  //-           | #{item.description}
+  //-     hr.featurette-divider
+  //- // /END THE FEATURETTES

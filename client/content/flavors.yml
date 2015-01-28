@@ -1,13 +1,14 @@
 flavorItems:
   -
     flavor: thai iced tea
-    description: Handmade ice-cream with the flavors of thailand
+    description: tasty tasty iced tea
     description_long: A flavor ubiquitous with Thailand ....etc etc
     button: Order now
     image: /content/img/flavor_thai-iced-tea.jpg
     featured: y-left
     tags:
-    link: 
+    link:
+    button: order 
   -
     flavor: passionfruit sorbet
     description: Handmade ice-cream with the flavors of thailand
@@ -15,15 +16,17 @@ flavorItems:
     image: /content/img/flavor_passion-fruit.jpg
     featured: y-right
     tags: vegan 
-    link: 
+    link:
+    button: order  
   -
     flavor: roasted coconut
-    description: Handmade ice-cream with the flavors of thailand
+    description: mmm cocount goodness
     button: Order now
     image: /content/img/flavor_roasted-coconut.jpg
     featured: n
     tags: 
-    link: 
+    link:
+    button: order  
   -
     flavor: almond
     description: Handmade ice-cream with the flavors of thailand
@@ -31,18 +34,21 @@ flavorItems:
     image: /content/img/flavor_almond.jpg
     featured: n
     tags: 
-    link: 
+    link:
+    button: order  
   -
     flavor: chocolate lemongrass
     description: Handmade ice-cream with the flavors of thailand
     button: Order now
     image: /content/img/flavor_chocolate-lemongrass.jpg
     featured: n
-    tags: chocolate nut-free 
+    tags: chocolate nut-free
+    button: order  
   -
     flavor: ???
     description: Handmade ice-cream with the flavors of thailand
     button: Order now
     image: /content/img/flavor_passionfruit-02.jpg
     featured: n
-    tags: 
+    tags:
+    button: order  

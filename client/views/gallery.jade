@@ -1,11 +1,12 @@
 // Carousel
 // ==================================================
-#myCarousel.carousel.slide(data-ride='carousel')
+//Set carousel to false to not slide through images
+#myCarousel.carousel.slide(data-ride='carousel' data-interval='false')
   // Indicators
-  ol.carousel-indicators
-    li.active(data-target='#myCarousel', data-slide-to='0')
-    li(data-target='#myCarousel', data-slide-to='1')
-    li(data-target='#myCarousel', data-slide-to='2')
+  //- ol.carousel-indicators
+  //-   li.active(data-target='#myCarousel', data-slide-to='0')
+  //-   li(data-target='#myCarousel', data-slide-to='1')
+  //-   li(data-target='#myCarousel', data-slide-to='2')
   .carousel-inner
     each item, index in _mainInfo.galleryItems
       if index == 0 
@@ -26,8 +27,8 @@
               p #{item.subheadline}
               p
                 a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
-  a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-    span.glyphicon.glyphicon-menu-left
-  a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-    span.glyphicon.glyphicon-menu-right
+  //- a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+  //-   span.glyphicon.glyphicon-menu-left
+  //- a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+  //-   span.glyphicon.glyphicon-menu-right
 // /.carousel

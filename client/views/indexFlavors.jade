@@ -1,10 +1,20 @@
 .container-fluid
+  .row.whitespace
+    h2.shadow flavors of the month
+    span.glyphicon.main.shadow.glyphicon-chevron-down
+.container-fluid
   // Featured flavor
   .row.medium
     each item, index in _flavorInfo.flavorItems
       if item.featured == 'y-left'
-        .col-md-7
+        .col-md-6
           img.featurette-image.img-responsive(src=item.image, alt='Featured image', style='disply:inline; min-width:100%; height: auto;' )
+          .container
+            .carousel-caption
+              h1 #{item.headline}
+              p #{item.description}
+              p
+                a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
           //- .col-md-7
           //-   h2.featurette-heading
           //-     | Flavor of the month
@@ -14,20 +24,5 @@
           //-   p
           //-     a.btn.btn-default(href='#', role='button') #{item.button}
       else if item.featured == 'y-right'
-        .col-md-5
+        .col-md-6
           img.featurette-image.img-responsive(src=item.image, alt='Featured image', style='disply:inline; min-width:100%; height: auto;' )
-  // Flavors
-.container
-  hr.featurette-divider
-  .row
-    each item, index in _flavorInfo.flavorItems
-      if index >= 0 
-        .col-lg-4
-          img.img-circle(src=item.image, alt='Flavor', style='width: 140px; height: 140px;')
-          h2 #{item.flavor}
-          p
-            | #{item.description}
-          //- p
-        //-     a.btn.btn-default(href='#', role='button') #{item.button}
-        //- // /.col-lg-4
-  // /.row

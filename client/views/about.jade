@@ -1,12 +1,52 @@
 extends layout.jade
 
 block content
-	.container
-		.row.featurette 
-			.col-md-7
-				h2.featurette-heading
-					|	blah
-				p.lead
-					|	blah
-			.col-md-5
-				img.featurette-image.img-responsive(src="", alt='Image')
+	#myCarousel.carousel.slide(data-ride='carousel' data-interval='false')
+	.carousel-inner
+	each item, index in _mainInfo.galleryItems
+	  if index == 0 
+	    .item.active
+	      img(src=item.image, alt='First slide')
+	      .container
+	        .carousel-caption
+	          h1 #{item.headline}
+	          p #{item.subheadline}
+	          p
+	            a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
+	      else 
+	        .item
+	          img(src=item.image, alt='First slide')
+	          .container
+	            .carousel-caption
+	              h1 #{item.headline}
+	              p #{item.subheadline}
+	              p
+	                a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
+
+	.container-fluid.marketing(id='info')
+	  // START THE FEATURETTES
+	  hr.featurette-divider
+	  each item, index in _mainInfo.aboutItems
+	    if index % 2 == 0
+	      .row.featurette 
+	        .col-md-7
+	          h2.featurette-heading
+	            | #{item.headline}
+	            span.text-muted #{item.who}
+	          p.lead
+	            |  #{item.description}
+	        .col-md-5
+	          img.featurette-image.img-responsive(src=item.image1, alt='Image')
+	      hr.featurette-divider
+	    else 
+	      .row.featurette
+	        .col-md-5
+	          img.featurette-image.img-responsive(src=item.image1, alt='Image')
+	        .col-md-7
+	          h2.featurette-heading
+	            | #{item.headline}
+	            span.text-muted #{item.who}
+	          p.lead
+	            | #{item.description}
+	      hr.featurette-divider
+	  // /END THE FEATURETTES
