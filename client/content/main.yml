@@ -4,7 +4,7 @@ galleryItems:
     headline: THAI GELATO
     subheadline: Handmade ice-cream with the flavors of Thailand
     button: Order now
-    image: /content/img/home_main.jpg
+    image: /content/img/Home_01.jpg
   # -
   #   headline: Catch us at Eat Real Festival 2014!
   #   subheadline: Handmade ice-cream with the flavors of thailand
@@ -15,65 +15,78 @@ galleryItems:
   #   subheadline: Handmade ice-cream with the flavors of thailand
   #   button: Order now
   #   image: /content/img/home_main.jpg
+
+homeItems:
+
 aboutItems:
   -
     headline: Meet the chef
     who: Funn Fisher
     description: Handmade ice-cream with the flavors of thailand
     description_long: Order now
-    image1: /content/img/about_funn-02.jpg
-    image2: /content/img/home_main.jpg
+    image1: /content/img/About_02.jpg
+    image2: /content/img/About_03.jpg
   -
-    headline: About
+    headline: Our Stories
     who: Secret Scoop
     description: Handmade ice-cream with the flavors of thailand
     description_long: Order now
-    image1: /content/img/home_main.jpg
-    image2: /content/img/home_main.jpg
-  -
-    headline: Make your event even tastier...
-    who: We can help
-    description: We come to you.
-    description_long: Order now
-    image1: /content/img/home_main.jpg
-    image2: /content/img/home_main.jpg
+    image1: /content/img/About_04.jpg
+    image2: /content/img/About_05.jpg
+  # -
+    # headline: Make your event even tastier...
+    # who: We can help
+    # description: We come to you.
+    # description_long: Order now
+    # image1: /content/img/home_main.jpg
+    # image2: /content/img/home_main.jpg
 marketingItems:
   -
-    headline: About Secret Scoop
-    caption: Funn Fisher serves up Secret Scoop ...
+    headline: OUR THAI GELATO TEAM!
+    caption: We create artistic catering events and bring ... to festivals
     paragraph: Handmade ice-cream with the flavors of thailand
     button: about
-    image: /content/img/Services_Special Events 03.jpg
+    image: /content/img/Home_05.jpg
 eventItems:
   -
-    type: Weddings
-    description: Handmade ice-cream with the flavors of thailand
+    type: Ice-cream?
+    description: We Cater events etc etc sdfkjhsdkfjsdkfnslfjslehjdlfsdf
     description_long: Order now
-    image1: /content/img/home_main.jpg
+    image1: /content/img/Events_02.jpg
     image2: /content/img/home_main.jpg
   -
-    type: Parties
+    type: Festivals
     description: Handmade ice-cream with the flavors of thailand
     description_long: Order now
-    image1: /content/img/home_main.jpg
+    image1: /content/img/Events_03.jpg
     image2: /content/img/home_main.jpg
   -
-    type: Corporate functions
+    type: Corporate Events
     description: Handmade ice-cream with the flavors of thailand
     description_long: Order now
-    image1: /content/img/home_main.jpg
+    image1: /content/img/Events_04.jpg
     image2: /content/img/home_main.jpg
   -
     type: Catering
     description: Handmade ice-cream with the flavors of thailand
     description_long: Order now
-    image1: /content/img/home_main.jpg
+    image1: /content/img/Events_05.jpg
     image2: /content/img/home_main.jpg
-contactItems:
+  -
+    type: Weddings
+    description: Handmade ice-cream with the flavors of thailand
+    description_long: Order now
+    image1: /content/img/Events_06.jpg
+    image2: /content/img/home_main.jpg
+contactItem:
     name: Secret Scoop
     phone: +1 510 444 4444
     address: 123 Fake St
     email: info@secretscoop.com
     facebook: thai gelato!
     twitter: thai gelato!
+    copyright: @ 2015 Secret Scoop
+
+
+
 

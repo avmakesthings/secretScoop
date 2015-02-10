@@ -1,20 +1,8 @@
 extends layout.jade
 block content
-// Flavors
-.container
-  hr.featurette-divider
-  .row
-    each item, index in _flavorInfo.flavorItems
-      if index >= 0 
-        .col-lg-4
-          img.img-circle(src=item.image, alt='Flavor', style='width: 140px; height: 140px;')
-          h2 #{item.flavor}
-          p
-            | #{item.description}
-          //- p
-        //-     a.btn.btn-default(href='#', role='button') #{item.button}
-        //- // /.col-lg-4
-  // /.row
+  //Flavor layout
+  include flavorDisplay.jade
+
 
 
 //- 	.container

@@ -1,10 +1,10 @@
-.container
+.container-fluid.footstyle
   // FOOTER
   footer
     p.pull-right
       a(href='#') Back to top
-    p
-      | &copy; 2014 Secret Scoop. &middot; 
-      a(href='#') Privacy
-      |  &middot; 
-      a(href='#') Terms
+    p.pull-left
+      | #{_mainInfo.contactItem.copyright} 
+      //- a(href='#') Privacy
+      //- |  &middot; 
+      //- a(href='#') Terms

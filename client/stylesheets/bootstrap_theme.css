@@ -6299,6 +6299,19 @@ body {
   padding-left: 0px;
   padding-right: 0px;
 }
+.container-fluid.fixed-medheight {
+  max-height: 600px;
+  min-width: 100%;
+  overflow: hidden;
+}
+.container-fluid.fixed-fullheight {
+  max-height: 1000px;
+  min-width: 100%;
+  overflow: hidden;
+}
+.vcenter {
+  margin-top: 20%;
+}
 .btn-primary {
   background-color: #ff9999;
   border-color: #ff9999;
@@ -6345,6 +6358,12 @@ h2.shadow {
               2px 2px #fe4902, 
               3px 3px #fe4902;
 }
+a {
+  color: #ff9999;
+}
+.full {
+  width: 100%;
+}
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
@@ -6359,7 +6378,7 @@ h2.shadow {
   font-weight: 10px;
 }
 /* Navbar colour.*/
-.navbar-static-top {
+.navbar-fixed-top {
   background-color: #fff;
   border-color: #fff;
 }
@@ -6384,9 +6403,9 @@ h2.shadow {
   padding-bottom: 5px;
 }
 .navbar-brand > img {
-  height: 300%;
-  padding-left: 40px;
-  padding-bottom: 10px;
+  height: 200%;
+  padding-left: 20px;
+  padding-bottom: 0px;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -6450,7 +6469,13 @@ h2.shadow {
 }
 /* Change row thickness */
 .row.medium {
-  height: 500px;
+  height: 600px;
+  overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.row.thick {
+  height: 800px;
   overflow: hidden;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -6461,10 +6486,22 @@ h2.shadow {
 }
 .row.whitespace {
   text-align: center;
+  vertical-align: text-bottom;
 }
 /* Change column styling */
 .col-md-4 {
   text-align: center;
+}
+.col-md-6 {
+  text-align: center;
+}
+/* Footer
+------------------------- */
+.footstyle {
+  background-color: ##EEEEF0;
+  min-height: 200px;
+  margin: 30px 15px 0px 15px;
+  padding: 30px;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -6484,6 +6521,9 @@ h2.shadow {
   .h1 {
     font-size: 4em;
   }
+  .flavor-height {
+    height: 400px;
+  }
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 0px;
@@ -6498,10 +6538,8 @@ h2.shadow {
   .featurette-heading {
     font-size: 50px;
   }
-}
-@media (min-width: 768px) and (min-width: 768px) {
-  .carousel-caption {
-    top: 100%;
+  .imgtextbottom {
+    top: 90%;
   }
 }
 @media (min-width: 992px) {

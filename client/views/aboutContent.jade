@@ -1,0 +1,107 @@
+.container-fluid(id=about) 
+  .row.thick
+    img.full(src='/content/img/About_01.jpg')
+    .container
+      .carousel-caption.imgtextcenter
+        h1 OUR STORIES
+        //- p #{item.subheadline}
+
+//Full width text
+hr.featurette-divider
+.container-fluid
+  .row.whitespace
+    .col-md-4
+    .col-md-4
+      h1.centered hello
+      h1.centered.para world
+    .col-md-4
+
+//Image right aligned
+.container-fluid
+  .row.featurette.medium
+    .col-md-4
+      img.featurette-image.img-responsive(src='/content/img/About_02.jpg', alt='Image')
+    .col-md-8
+      img.featurette-image.img-responsive(src='/content/img/About_03.jpg', alt='Image')
+
+//Full width text
+.container-fluid
+  .row.whitespace
+    .col-md-4
+    .col-md-4
+      h1.centered hello
+      h1.centered.para world
+    .col-md-4
+
+//50/5O SPLIT IMAGE FROM SRC
+.container-fluid
+  .row.featurette.medium
+    .col-md-6
+      img.featurette-image.img-responsive(src='/content/img/About_04.jpg', alt='Image')
+    .col-md-6
+      img.featurette-image.img-responsive(src='/content/img/About_05.jpg', alt='Image')
+
+//FULL WIDTH IMAGE FROM SRC
+hr.featurette-divider
+.container-fluid(id=about) 
+  .row.thick
+    img.full(src='/content/img/About_06.jpg')
+
+
+//- //FULL WIDTH IMAGE FROM YAML
+//- .container-fluid(id=about) 
+//-   .row
+//-     img.full(src=_mainInfo.aboutItems[1].image1)
+
+//- //GALLERY IMAGES
+//- #myCarousel.carousel.slide(data-ride='carousel' data-interval='false')
+//- .carousel-inner
+//- each item, index in _mainInfo.mainItems
+//-   if index == 0 
+//-     .item.active
+//-       img(src=item.image, alt='First slide')
+//-       .container
+//-         .carousel-caption
+//-           h1 #{item.headline}
+//-           p #{item.subheadline}
+//-           p
+//-             a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
+//-   else 
+//-     .item
+//-       img(src=item.image, alt='First slide')
+//-       .container
+//-         .carousel-caption
+//-           h1 #{item.headline}
+//-           p #{item.subheadline}
+//-           p
+//-             a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
+
+
+//- //DYNAMICALLY CREATE ROWS AND POPULATE FROM YAML
+//- .container-fluid.marketing(id='info')
+//-   // START THE FEATURETTES
+//-   hr.featurette-divider
+//-   each item, index in _mainInfo.aboutItems
+//-     if index % 2 == 0
+//-       .row.featurette 
+//-         .col-md-7
+//-           h2.featurette-heading
+//-             | #{item.headline}
+//-             span.text-muted #{item.who}
+//-           p.lead
+//-             |  #{item.description}
+//-         .col-md-5
+//-           img.featurette-image.img-responsive(src=item.image1, alt='Image')
+//-       hr.featurette-divider
+//-     else 
+//-       .row.featurette
+//-         .col-md-5
+//-           img.featurette-image.img-responsive(src=item.image1, alt='Image')
+//-         .col-md-7
+//-           h2.featurette-heading
+//-             | #{item.headline}
+//-             span.text-muted #{item.who}
+//-           p.lead
+//-             | #{item.description}
+//-       hr.featurette-divider
+//-   // /END THE FEATURETTES

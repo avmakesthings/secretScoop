@@ -1,22 +1,47 @@
+//Full width text
 .container-fluid
-  row.whitespace
+  .row.whitespace
     .col-md-4
     .col-md-4
       h1.centered hello
       h1.centered.para world
     .col-md-4
 
+//Full width image
+.container-fluid
+  .row.medium
+    img(src='/content/img/Home_04.jpg')
+hr.featurette-divider
+
+//Image right aligned
 .container-fluid
   each item, index in _mainInfo.marketingItems
-    row.featurette
-      .col-md-8
-        img.featurette-image.img-responsive(src=src=item.image, alt='Image')
-      .col-md-4
-        h1 #{item.headline}
+    .row.featurette.medium
+      .col-md-6.text-center
+        h1.vcenter #{item.headline}
         p #{item.paragraph}
         p
           a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
+      .col-md-6
+        img.featurette-image.img-responsive(src=src=item.image, alt='Image')
 
+.container-fluid
+  hr.featurette-divider
+  .row.thick
+    img.full(src='/content/img/Home_06.jpg')
+  hr.featurette-divider
+
+//- //Image left aligned
+//- .container-fluid
+//-   each item, index in _mainInfo.marketingItems
+//-     row.featurette
+//-       .col-md-8
+//-         img.featurette-image.img-responsive(src=src=item.image, alt='Image')
+//-       .col-md-4.text-center
+//-         h1 #{item.headline}
+//-         p #{item.paragraph}
+//-         p
+//-           a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
 
 //- .container-fluid.marketing(id='info')
   //- // START THE FEATURETTES

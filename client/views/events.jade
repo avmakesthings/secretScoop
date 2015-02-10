@@ -1,12 +1,41 @@
 extends layout.jade
 
 block content
-	.container
-		.row.featurette 
-			.col-md-7
-				h2.featurette-heading
-					|	blahj
-				p.lead
-					|	blah
-			.col-md-5
-				img.featurette-image.img-responsive(src="", alt='Image')
+	//Full width image
+	.container-fluid
+	row.featurette-image.thick
+		img.full(src='/content/img/Events_01.jpg')
+	hr.featurette-divider
+
+	//Image left aligned
+	each item, index in _mainInfo.eventItems
+		.container-fluid.fixed-medheight
+			row.featurette
+				.col-md-6
+					img.featurette-image.img-responsive(src=src=item.image1, alt='Image')
+				.col-md-6.text-center
+					h1.vcenter #{item.type}
+					p #{item.description}
+					p
+						a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
+		hr.featurette-divider
+		
+
+
+
+	//- //FULL WIDTH IMAGE FROM YAML
+	//- .container-fluid
+	//- row.featurette-image
+	//- 	img.full(src=_mainInfo.aboutItems[1].image1)
+	//- hr.featurette-divider
+
+
+	//- .container
+	//- 	.row.featurette 
+	//- 		.col-md-7
+	//- 			h2.featurette-heading
+	//- 				|	blahj
+	//- 			p.lead
+	//- 				|	blah
+	//- 		.col-md-5
+	//- 			img.featurette-image.img-responsive(src="", alt='Image')

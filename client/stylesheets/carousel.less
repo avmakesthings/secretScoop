@@ -9,6 +9,7 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
@@ -18,6 +19,25 @@ body {
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.container-fluid.fixed-medheight{
+  max-height: 600px;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.container-fluid.fixed-fullheight{
+  max-height: 1000px;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.vcenter {
+  margin-top: 20%;
+    // display: inline-block;
+    // vertical-align: middle;
+    // float: none;
 }
 
 //Buttons
@@ -79,6 +99,15 @@ h2.shadow {
               3px 3px #fe4902;
 }
 
+a{
+  color:#ff9999;
+}
+
+//Images
+.full{
+  width: 100%;
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -95,7 +124,7 @@ h2.shadow {
 }
 
 /* Navbar colour.*/
-.navbar-static-top {
+.navbar-fixed-top {
   background-color: #fff;
   border-color: #fff;
 }
@@ -125,9 +154,9 @@ h2.shadow {
 }
 
 .navbar-brand > img {
-  height: 300%;
-  padding-left: 40px;
-  padding-bottom: 10px;
+  height: 200%;
+  padding-left: 20px;
+  padding-bottom: 0px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -150,6 +179,8 @@ h2.shadow {
   z-index: 10;
 }
 
+
+
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
@@ -166,6 +197,7 @@ h2.shadow {
 .carousel-caption p {
 font-size: 3em;
 }
+
 
 
 /* MARKETING CONTENT
@@ -206,7 +238,14 @@ font-size: 3em;
 
 /* Change row thickness */
 .row.medium {
-  height: 500px;
+  height: 600px;
+  overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.row.thick {
+  height: 800px;
   overflow: hidden;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -219,12 +258,30 @@ font-size: 3em;
 
 .row.whitespace {
   text-align: center;
+  vertical-align: text-bottom;
 }
+
 
 /* Change column styling */
 
 .col-md-4 {
   text-align: center;
+}
+
+.col-md-6 {
+  text-align: center;
+}
+
+
+
+
+/* Footer
+------------------------- */
+.footstyle{
+  background-color: ##EEEEF0;
+  min-height: 200px;
+  margin: 30px 15px 0px 15px;
+  padding: 30px;
 }
 
 
@@ -249,11 +306,9 @@ font-size: 3em;
     font-size: 4em;
   }
 
-  @media (min-width: 768px) {
-  .carousel-caption {
-    top: 100%;  
+  .flavor-height{
+    height:400px;
   }
-}
 
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
@@ -270,6 +325,10 @@ font-size: 3em;
 
   .featurette-heading {
     font-size: 50px;
+  }
+
+  .imgtextbottom {
+  top: 90%;
   }
 }
 
