@@ -1,54 +1,56 @@
 flavorItems:
   -
-    flavor: thai iced tea
-    description: tasty tasty iced tea
+    flavor: Rosted Coconut Gelato
+    description: A coconut milk base with shredded coconut roasted in Thai Style
     description_long: A flavor ubiquitous with Thailand ....etc etc
     button: Order now
-    image: /content/img/flavor_thai-iced-tea.jpg
-    featured: y-left
+    image: /content/img/flavor_roasted-coconut.jpg
+    spoon: /content/img/Flavorspoon_01.jpg
+    featured: y-right
     tags:
     link:
-    button: order 
+
   -
-    flavor: passionfruit sorbet
-    description: Handmade ice-cream with the flavors of thailand
+    flavor: Thai Iced Tea Gelato
+    description: A remarkably aromatic Thai Tea flavor
     button: Order now
-    image: /content/img/flavor_passion-fruit.jpg
-    featured: y-right
+    image: /content/img/flavor_thai-iced-tea.jpg
+    spoon: /content/img/Flavorspoon_02.jpg
+    featured: y-left
     tags: vegan 
     link:
-    button: order  
+
   -
-    flavor: roasted coconut
-    description: mmm cocount goodness
-    button: Order now
-    image: /content/img/flavor_roasted-coconut.jpg
-    featured: n
-    tags: 
-    link:
-    button: order  
-  -
-    flavor: almond
-    description: Handmade ice-cream with the flavors of thailand
-    button: Order now
-    image: /content/img/flavor_almond.jpg
-    featured: n
-    tags: 
-    link:
-    button: order  
-  -
-    flavor: chocolate lemongrass
-    description: Handmade ice-cream with the flavors of thailand
+    flavor: Chocolate Lemongrass Gelato
+    description: A Secret Scoop original
     button: Order now
     image: /content/img/flavor_chocolate-lemongrass.jpg
+    spoon: /content/img/Flavorspoon_03.jpg
     featured: n
-    tags: chocolate nut-free
-    button: order  
+    tags: 
+    link: 
   -
-    flavor: ???
-    description: Handmade ice-cream with the flavors of thailand
+    flavor: Strawberry Lavender Gelato
+    description: The fragrance of lavender in a delicate strawberry base
+    button: Order now
+    image: /content/img/flavor_almond.jpg
+    spoon: /content/img/Flavorspoon_04.jpg
+    featured: n
+    tags: 
+    link: 
+  -
+    flavor: Passionfruit Sorbet
+    description: A refreshing tropical flavor for any occasion
     button: Order now
     image: /content/img/flavor_passionfruit-02.jpg
+    spoon: /content/img/Flavorspoon_05.jpg
+    featured: n
+    tags: chocolate nut-free
+  -
+    flavor: Raspberry Basil Sorbet 
+    description: A flavorful raspberry sorbet with a hint of Thai basi
+    button: Order now
+    image: /content/img/flavor_passionfruit-02.jpg
+    spoon: /content/img/Flavorspoon_06.jpg
     featured: n
     tags:
-    button: order  

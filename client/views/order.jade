@@ -1,12 +1,21 @@
 extends layout.jade
 
 block content
+	//Full width image
+	.container-fluid
+		.row.featurette-image.thick
+			img.full(src='/content/img/Order_01.jpg')
+		.container
+			.carousel-caption.imgtextcenter
+				h1.big ORDER 
+				p Our Order page is coming soon. 
+	hr.featurette-divider
+	
+	//Full width text
 	.container
-		.row.featurette 
-			.col-md-7
-				h2.featurette-heading
-					|	blahj
-				p.lead
-					|	blah
-			.col-md-5
-				img.featurette-image.img-responsive(src="", alt='Image')
+		.row.whitespace
+			.col-md-12.centered
+				//- h1.centered Coming Soon!
+				p.centered.para Please contact us directly via email at 
+					a(href='mailto:helloworld@example.com') orders@secretscoop.com 
+					| to place an order. We'll be happy to help!

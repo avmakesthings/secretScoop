@@ -1,18 +1,18 @@
 .container-fluid
   .row.whitespace
     h2.shadow flavors of the month
-    span.glyphicon.main.shadow.glyphicon-chevron-down
+    //- span.glyphicon.main.shadow.glyphicon-chevron-down.shadow
 .container-fluid
   // Featured flavor
   .row.medium
     each item, index in _flavorInfo.flavorItems
       if item.featured == 'y-left'
         .col-md-6
-          img.featurette-image.img-responsive(src=item.image, alt='Featured image', style='disply:inline; min-width:100%; height: auto;' )
+          img.featurette-image.img-responsive(src=item.image, alt='Featured image')
           .container
-            .carousel-caption
-              h1 #{item.headline}
-              p #{item.description}
+            .carousel-caption.cc-top-aligned
+              h2.light #{item.flavor}
+              //- p #{item.description}
               p
                 a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
           //- .col-md-7
@@ -25,4 +25,10 @@
           //-     a.btn.btn-default(href='#', role='button') #{item.button}
       else if item.featured == 'y-right'
         .col-md-6
-          img.featurette-image.img-responsive(src=item.image, alt='Featured image', style='disply:inline; min-width:100%; height: auto;' )
+          img.featurette-image.img-responsive.vertical-fill(src=item.image, alt='Featured image')
+          .container
+            .carousel-caption.cc-top-aligned
+              h2.light #{item.flavor}
+              //- p #{item.description}
+              p
+                a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}

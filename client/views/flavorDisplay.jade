@@ -4,35 +4,44 @@
     img.full(src='/content/img/Flavor_01.jpg')
     .container
       .carousel-caption.imgtextcenter
-        h1 OUR STORIES
+        h1.big OUR FLAVORS
         //- p #{item.subheadline}
   hr.featurette-divider
 
 //Full width text
-.container-fluid
+.container
   .row.whitespace
-    .col-md-4
-    .col-md-4
-      h1.centered hello
-      h1.centered.para world
-    .col-md-4
+    .col-md-12.centered
+      h1 Meet our signature flavors
+      h3 Inspired by the rich aromas and tastes of Thailand
+
 
 // Flavors
 .container(style= "margin-top:90px;")
   hr.featurette-divider
   .row
     each item, index in _flavorInfo.flavorItems
-      .col-lg-4.flavor-height
-        img.img-circle(src=item.image, alt='Flavor', style='width: 140px; height: 140px;')
+      .col-lg-4
+        img.img-circle(src=item.spoon, alt='Flavor')
         h2 #{item.flavor}
-        p
+        p.flavor-text
           | #{item.description}
         p
-          a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
+          a.btn.btn-lg.btn-primary(href='/order', role='button') #{item.button}
+
+        //- if item.button == n {
+        //-     p 
+        //-       | what?
+        //-  else
+        //-     p
+        //-       a.btn.btn-lg.btn-primary(href='/order', role='button') #{item.button}
+        //- }
+
 
         //- p
       //-     a.btn.btn-default(href='#', role='button') #{item.button}
       //- // /.col-lg-4
+  hr.featurette-divider    
   // /.row
 
 

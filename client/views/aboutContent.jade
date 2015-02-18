@@ -1,20 +1,20 @@
 .container-fluid(id=about) 
-  .row.thick
-    img.full(src='/content/img/About_01.jpg')
-    .container
-      .carousel-caption.imgtextcenter
-        h1 OUR STORIES
-        //- p #{item.subheadline}
+  .row
+    .col-md-12
+      img.full(src='/content/img/About_01.jpg')
+      .container
+        .carousel-caption.imgtextcenter
+          h1.big OUR STORY
+          //- p #{item.subheadline}
 
 //Full width text
 hr.featurette-divider
-.container-fluid
+.container
   .row.whitespace
-    .col-md-4
-    .col-md-4
-      h1.centered hello
-      h1.centered.para world
-    .col-md-4
+    .col-md-12.centered
+      h1.centered Our Secret
+      p.centered.para Secret Scoop Thai gelato introduces all-natural and exotic Thai flavors, to San Francisco from the East. We offer a wide range of exotic innovative flavors free from artificial ingredients. We use locally sourced products whenever possible, compostable packaging and 100% rBST free milk. We hope you enjoy Secret Scoop as much as we do!
+
 
 //Image right aligned
 .container-fluid
@@ -25,21 +25,20 @@ hr.featurette-divider
       img.featurette-image.img-responsive(src='/content/img/About_03.jpg', alt='Image')
 
 //Full width text
-.container-fluid
+.container
   .row.whitespace
-    .col-md-4
-    .col-md-4
-      h1.centered hello
-      h1.centered.para world
-    .col-md-4
+    .col-md-12
+      h1.centered Our Chef
+      p.centered.para Founded in 2012 by head chef Funn Fisher, Secret Scoop Thai Gelato was born from a love for dessert and a desire to stay healthy. Funn created her own gelato recipes from all natural and exotic ingredients with a goal of providing gelato/sorbet lovers with flavors from her homeland. 
+
 
 //50/5O SPLIT IMAGE FROM SRC
 .container-fluid
   .row.featurette.medium
     .col-md-6
-      img.featurette-image.img-responsive(src='/content/img/About_04.jpg', alt='Image')
+      img.featurette-image.img-responsive.vertical-fill(src='/content/img/About_04.jpg', alt='Image')
     .col-md-6
-      img.featurette-image.img-responsive(src='/content/img/About_05.jpg', alt='Image')
+      img.featurette-image.img-responsive.vertcal-fill(src='/content/img/About_05.jpg', alt='Image')
 
 //FULL WIDTH IMAGE FROM SRC
 hr.featurette-divider

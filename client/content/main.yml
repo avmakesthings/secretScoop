@@ -2,8 +2,9 @@ name: Secret Scoop
 galleryItems:
   -
     headline: THAI GELATO
-    subheadline: Handmade ice-cream with the flavors of Thailand
-    button: Order now
+    subheadline: SEE YOU AT WIX LOUNGE, SAN FRANCISCO ON FEBRUARY 24, 2015
+    paragraph: Sample our Thai gelato at the Expat Woman event from 6 - 9pm and hear our chef Funn Fisher speak about her experiences as an international entrueprenuer. 
+    # button: Order now
     image: /content/img/Home_01.jpg
   # -
   #   headline: Catch us at Eat Real Festival 2014!
@@ -47,13 +48,17 @@ marketingItems:
     paragraph: Handmade ice-cream with the flavors of thailand
     button: about
     image: /content/img/Home_05.jpg
+
+
+serviceItem:
+  type: We come to you!
+  description: Secret Scoop specializes in catering events and outdoor festivals. We not only serve exotic gelato flavors but will also work the concept or theme of your event into the presentation of our products to your guests!
+  description_long: Order now
+  button: Contact Us
+  image1: /content/img/Events_02.jpg
+  image2: /content/img/home_main.jpg
+
 eventItems:
-  -
-    type: Ice-cream?
-    description: We Cater events etc etc sdfkjhsdkfjsdkfnslfjslehjdlfsdf
-    description_long: Order now
-    image1: /content/img/Events_02.jpg
-    image2: /content/img/home_main.jpg
   -
     type: Festivals
     description: Handmade ice-cream with the flavors of thailand
@@ -70,13 +75,13 @@ eventItems:
     type: Catering
     description: Handmade ice-cream with the flavors of thailand
     description_long: Order now
-    image1: /content/img/Events_05.jpg
+    image1: /content/img/Events_06.jpg
     image2: /content/img/home_main.jpg
   -
     type: Weddings
     description: Handmade ice-cream with the flavors of thailand
     description_long: Order now
-    image1: /content/img/Events_06.jpg
+    image1: /content/img/Events_05.jpg
     image2: /content/img/home_main.jpg
 contactItem:
     name: Secret Scoop

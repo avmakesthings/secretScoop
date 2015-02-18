@@ -16,8 +16,8 @@
             .carousel-caption.imgtextbottom
               h1 #{item.headline}
               p #{item.subheadline}
-              p
-                a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
+              p.para_small #{item.paragraph}
+                //- a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
       else 
         .item
           img(src=item.image, alt='First slide')

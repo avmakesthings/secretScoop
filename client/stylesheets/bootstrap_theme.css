@@ -6329,6 +6329,9 @@ body {
   font-size: 4em;
   line-height: 2;
 }
+.glyphicon-align-justify {
+  color: black;
+}
 h1 {
   font-family: 'Nunito', 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
   font-size: 4em;
@@ -6350,19 +6353,43 @@ h2 {
   letter-spacing: .1em;
   color: #928787;
   text-transform: uppercase;
+  min-height: 3em;
 }
-h2.shadow {
-  color: white;
+h2.light {
+  min-height: 2em;
+  color: #fff;
+}
+p.flavor-text {
+  min-height: 3em;
+}
+.shadow {
+  color: #ff9274;
   font: bold 52px 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
   text-shadow: 1px 1px #fe4902, 
               2px 2px #fe4902, 
               3px 3px #fe4902;
 }
+.big {
+  font-size: 6em;
+  padding-bottom: 200px;
+}
 a {
   color: #ff9999;
 }
+.para_small {
+  font-size: 1.5em!important;
+}
 .full {
   width: 100%;
+}
+.vertical-fill {
+  max-height: 100%;
+  max-width: inherit;
+}
+.img-circle {
+  border-radius: 0px;
+  height: 300px;
+  width: auto;
 }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -6381,6 +6408,7 @@ a {
 .navbar-fixed-top {
   background-color: #fff;
   border-color: #fff;
+  font-family: 'Nunito', 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
 }
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper > .container {
@@ -6407,6 +6435,16 @@ a {
   padding-left: 20px;
   padding-bottom: 0px;
 }
+.navbar-inverse .navbar-toggle {
+  border-color: #fff;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: none!important;
+  z-index: 8;
+}
+.icon-bar {
+  background-color: #ff9999;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
@@ -6421,6 +6459,10 @@ a {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  top: 50%;
+}
+.cc-top-aligned {
+  top: 300px;
 }
 /* Declare heights because of positioning of img element */
 .carousel .item {
@@ -6494,13 +6536,14 @@ a {
 }
 .col-md-6 {
   text-align: center;
+  height: inherit;
+  overflow: hidden;
 }
 /* Footer
 ------------------------- */
 .footstyle {
-  background-color: ##EEEEF0;
-  min-height: 200px;
-  margin: 30px 15px 0px 15px;
+  background-color: #EEEEF0;
+  margin-top: 30px;
   padding: 30px;
 }
 /* RESPONSIVE CSS
@@ -6539,7 +6582,13 @@ a {
     font-size: 50px;
   }
   .imgtextbottom {
-    top: 90%;
+    top: 50%;
+  }
+  .imgtexttop {
+    top: 20%;
+  }
+  .big {
+    padding-bottom: 100px;
   }
 }
 @media (min-width: 992px) {
