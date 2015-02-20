@@ -40,6 +40,13 @@ body {
     // float: none;
 }
 
+.resize {
+  position: relative;
+  width: 50%;
+  padding-bottom: 40%;
+  height: 0;
+}
+
 //Buttons
 .btn-primary {
   background-color: #ff9999;
@@ -132,9 +139,19 @@ a{
 }
 
 .vertical-fill {
-  max-height: 100%;
-  max-width: inherit;
+  height: 100%;
+  width: auto;
 } 
+
+// .vertical-fill {
+//   max-height: 100%;
+//   max-width: inherit;
+// } 
+
+.horizontal-fill {
+  width: 100%;
+  height: auto;
+}
 
 .img-circle{
   border-radius: 0px;
@@ -343,7 +360,29 @@ font-size: 3em;
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 768px) {
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .carousel-caption p {
+    font-size: 2em;
+    color: grey;
+    text-shadow: none; 
+  } 
+
+  .shadow{
+    font-size: 2em;
+  }
+}
+
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px){
+}
+
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px)  {
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 0px;
@@ -414,11 +453,4 @@ font-size: 3em;
 
 
  
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { ... }
- 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) { ... }
- 
-/* Landscape phones and down */
-@media (max-width: 480px) { ... }
+

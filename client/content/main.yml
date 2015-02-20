@@ -61,25 +61,27 @@ serviceItem:
 eventItems:
   -
     type: Festivals
-    description: Handmade ice-cream with the flavors of thailand
+    description: We've served out Thai gelato at many festivals - let us add a touch of sweetness to yours!
     description_long: Order now
     image1: /content/img/Events_03.jpg
     image2: /content/img/home_main.jpg
   -
     type: Corporate Events
-    description: Handmade ice-cream with the flavors of thailand
+    description: Secret Scoop has catered many large and small scale corporate events in the past. We can help promote your business identity while our Thai gelato makes your staff and clients happy.
+
+
     description_long: Order now
     image1: /content/img/Events_04.jpg
     image2: /content/img/home_main.jpg
   -
     type: Catering
-    description: Handmade ice-cream with the flavors of thailand
+    description: Secret Scoop can cater all kinds of parties. Let’s us take care of your fun gatherings. 
     description_long: Order now
     image1: /content/img/Events_06.jpg
     image2: /content/img/home_main.jpg
   -
     type: Weddings
-    description: Handmade ice-cream with the flavors of thailand
+    description: We can make your big day memorable. Let us know your wedding theme and we will work with you.
     description_long: Order now
     image1: /content/img/Events_05.jpg
     image2: /content/img/home_main.jpg

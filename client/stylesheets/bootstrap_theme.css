@@ -6383,8 +6383,12 @@ a {
   width: 100%;
 }
 .vertical-fill {
-  max-height: 100%;
-  max-width: inherit;
+  height: 100%;
+  width: auto;
+}
+.horizontal-fill {
+  width: 100%;
+  height: auto;
 }
 .img-circle {
   border-radius: 0px;
@@ -6548,7 +6552,20 @@ a {
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-@media (min-width: 768px) {
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .carousel-caption p {
+    font-size: 2em;
+    color: grey;
+    text-shadow: none;
+  }
+  .shadow {
+    font-size: 2em;
+  }
+}
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 0px;
@@ -6591,6 +6608,7 @@ a {
     padding-bottom: 100px;
   }
 }
+/* Large desktop */
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
