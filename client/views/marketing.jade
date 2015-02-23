@@ -2,14 +2,14 @@
 .container-fluid
   .row.whitespace
     .col-md-12
-      h2.centered Sample the flavors of Thailand
-      h2 You'll love every unique taste!
+      h2.centered.hidden-xs  Sample the flavors of Thailand
+      h2.hidden-xs You'll love every unique taste!
 
 
 //Full width image
-.container-fluid
+.container-fluid.hidden-xs
   .row.medium
-    .col-md-12
+    .col-md-12.medium
       img(src='/content/img/Home_04.jpg')
       .carousel-caption.imgtextcenter.cc-top-aligned
         h1 EAT - ALL - NATURAL
@@ -19,13 +19,15 @@ hr.featurette-divider
 .container-fluid
   each item, index in _mainInfo.marketingItems
     .row.featurette.medium
-      .col-md-6.text-center
+      .col-md-6.text-center.medium
         h1.vcenter #{item.headline}
         p #{item.paragraph}
         p
           a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
-      .col-md-6
+      hr.featurette-divider.visible-sm
+      .col-md-6.medium
         img.featurette-image.img-responsive(src=src=item.image, alt='Image')
+
 
 .container-fluid
   hr.featurette-divider

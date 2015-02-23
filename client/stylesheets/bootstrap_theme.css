@@ -6300,7 +6300,6 @@ body {
   padding-right: 0px;
 }
 .container-fluid.fixed-medheight {
-  max-height: 600px;
   min-width: 100%;
   overflow: hidden;
 }
@@ -6311,6 +6310,12 @@ body {
 }
 .vcenter {
   margin-top: 20%;
+}
+.resize {
+  position: relative;
+  width: 50%;
+  padding-bottom: 40%;
+  height: 0;
 }
 .btn-primary {
   background-color: #ff9999;
@@ -6331,6 +6336,15 @@ body {
 }
 .glyphicon-align-justify {
   color: black;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #ff9999;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #FFFFFF;
+  border-color: #ff9999;
+  font-size: 2em;
 }
 h1 {
   font-family: 'Nunito', 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
@@ -6562,8 +6576,85 @@ a {
   .shadow {
     font-size: 2em;
   }
+  .big {
+    padding-bottom: 0px;
+    font-size: 2em;
+    color: #726E6D;
+  }
+  .vertical-fill {
+    height: auto;
+  }
+  .h2.light {
+    color: #808080;
+  }
+  .cc-top-aligned {
+    top: 20%;
+  }
+  .row.thick {
+    height: auto;
+  }
+  .row.medium {
+    height: auto;
+  }
+  .vcenter {
+    margin-top: 10%;
+  }
+  .h1 {
+    font-size: 2em;
+  }
+  .full {
+    max-height: 400px;
+    width: auto;
+  }
+  .big {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: #5A5A5A;
+    font-size: 4em;
+  }
 }
 /* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .carousel-caption p {
+    font-size: 2em;
+    color: grey;
+    text-shadow: none;
+  }
+  .shadow {
+    font-size: 2em;
+  }
+  .vertical-fill {
+    height: auto;
+  }
+  .h2.light {
+    color: #808080;
+  }
+  .cc-top-aligned {
+    top: 20%;
+  }
+  .row.thick {
+    height: auto;
+  }
+  .row.medium {
+    height: auto;
+  }
+  .vcenter {
+    margin-top: 10%;
+  }
+  .h1 {
+    font-size: 2em;
+  }
+  .full {
+    max-height: 400px;
+    width: 100%;
+  }
+  .big {
+    padding-top: 30%;
+    padding-bottom: 10%;
+    color: #5A5A5A;
+    font-size: 4em;
+  }
+}
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
   /* Navbar positioning foo */
@@ -6595,6 +6686,9 @@ a {
     letter-spacing: .1em;
     line-height: 1.4;
   }
+  .para_small {
+    font-size: 1em!important;
+  }
   .featurette-heading {
     font-size: 50px;
   }
@@ -6605,7 +6699,34 @@ a {
     top: 20%;
   }
   .big {
-    padding-bottom: 100px;
+    padding-bottom: 3%;
+    font-size: 4em;
+  }
+  .row.medium {
+    height: auto;
+  }
+  .medium {
+    height: 600px;
+  }
+  .vertical-fill {
+    height: auto;
+    min-width: 100%;
+  }
+  .img-responsive,
+  .thumbnail > img,
+  .thumbnail a > img,
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    min-width: 100%;
+  }
+  .carousel-caption {
+    top: 25%;
+  }
+  .vcenter {
+    margin-top: 5%;
+  }
+  .container-fluid.fixed-medheight {
+    max-height: auto;
   }
 }
 /* Large desktop */

@@ -16,7 +16,7 @@
   .row.medium
     each item, index in _flavorInfo.flavorItems
       if item.featured == 'y-left'
-        .col-md-6
+        .col-md-6.medium
           img.featurette-image.img-responsive(src=item.image, alt='Featured image')
           .container
             .carousel-caption.cc-top-aligned
@@ -24,6 +24,7 @@
               //- p #{item.description}
               p
                 a.btn.btn-lg.btn-primary(href='#', role='button') #{item.button}
+          hr.featurette-divider.visible-sm
           //- .col-md-7
           //-   h2.featurette-heading
           //-     | Flavor of the month
@@ -33,7 +34,7 @@
           //-   p
           //-     a.btn.btn-default(href='#', role='button') #{item.button}
       else if item.featured == 'y-right'
-        .col-md-6
+        .col-md-6.medium
           img.featurette-image.img-responsive.vertical-fill(src=item.image, alt='Featured image')
           .container
             .carousel-caption.cc-top-aligned
