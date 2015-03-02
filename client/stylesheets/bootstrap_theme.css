@@ -6378,6 +6378,7 @@ p.flavor-text {
 }
 .shadow {
   color: #ff9274;
+  padding-top: 2.5%;
   font: bold 52px 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
   text-shadow: 1px 1px #fe4902, 
               2px 2px #fe4902, 
@@ -6462,6 +6463,9 @@ a {
 }
 .icon-bar {
   background-color: #ff9999;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #ff9999;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -6563,6 +6567,10 @@ a {
   background-color: #EEEEF0;
   margin-top: 30px;
   padding: 30px;
+}
+.nomargin {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -6727,6 +6735,9 @@ a {
   }
   .container-fluid.fixed-medheight {
     max-height: auto;
+  }
+  .carousel {
+    height: auto;
   }
 }
 /* Large desktop */

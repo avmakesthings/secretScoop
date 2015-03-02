@@ -2,8 +2,8 @@ name: Secret Scoop
 galleryItems:
   -
     headline: THAI GELATO
-    subheadline: SEE YOU AT WIX LOUNGE, SAN FRANCISCO ON FEBRUARY 24, 2015
-    paragraph: Sample our Thai gelato at the Expat Woman event from 6 - 9pm and hear our chef Funn Fisher speak about her experiences as an international entrueprenuer. 
+    subheadline: STAY TUNED FOR SUMMER FESTIVAL LOCATIONS!
+    paragraph: 
     # button: Order now
     image: /content/img/Home_01.jpg
   # -
@@ -43,7 +43,7 @@ aboutItems:
     # image2: /content/img/home_main.jpg
 marketingItems:
   -
-    headline: OUR THAI GELATO TEAM!
+    headline: Get To Know Secret Scoop!
     caption: We create artistic catering events and bring ... to festivals
     paragraph: Handmade ice-cream with the flavors of thailand
     button: about
