@@ -6441,6 +6441,7 @@ a {
 }
 .navbar-wrapper .navbar .container {
   width: auto;
+  margin-bottom: 1%;
 }
 .navbar-nav {
   float: right;
@@ -6539,7 +6540,6 @@ a {
   padding-bottom: 15px;
 }
 .row.thick {
-  height: 800px;
   overflow: hidden;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -6661,6 +6661,9 @@ a {
     padding-bottom: 10%;
     color: #5A5A5A;
     font-size: 4em;
+  }
+  .medium {
+    height: 500px;
   }
 }
 /* Portrait tablet to landscape and desktop */
