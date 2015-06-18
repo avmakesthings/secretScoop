@@ -11,7 +11,7 @@
     each item, index in _mainInfo.galleryItems
       if index == 0 
         .item.active
-          img(src=item.image, alt='First slide')
+          img(src=item.image, alt='First slide').img-tentacle
           .container.hidden-phone
             .carousel-caption.imgtextbottom
               h1.big #{item.headline}

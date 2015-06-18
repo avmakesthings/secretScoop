@@ -6337,6 +6337,9 @@ body {
 .glyphicon-align-justify {
   color: black;
 }
+.navbar-collapse {
+  border: none;
+}
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #ff9999;
 }
@@ -6617,7 +6620,7 @@ a {
   .big {
     padding-top: 10%;
     padding-bottom: 10%;
-    color: #5A5A5A;
+    color: #fff;
     font-size: 4em;
   }
 }
@@ -6664,6 +6667,12 @@ a {
   }
   .medium {
     height: 500px;
+  }
+  .img-tentacle {
+    max-width: none!important;
+  }
+  .navbar-header {
+    height: 70px;
   }
 }
 /* Portrait tablet to landscape and desktop */
