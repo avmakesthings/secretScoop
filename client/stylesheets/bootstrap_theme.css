@@ -6389,7 +6389,7 @@ p.flavor-text {
 }
 .big {
   font-size: 6em;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
 }
 a {
   color: #ff9999;
@@ -6637,9 +6637,6 @@ a {
   .vertical-fill {
     height: auto;
   }
-  .h2.light {
-    color: #808080;
-  }
   .cc-top-aligned {
     top: 20%;
   }
@@ -6651,19 +6648,23 @@ a {
   }
   .vcenter {
     margin-top: 10%;
+    font-size: x-large;
   }
-  .h1 {
+  h1 {
     font-size: 2em;
+  }
+  p {
+    font-size: x-large;
   }
   .full {
     max-height: 400px;
     width: 100%;
   }
   .big {
-    padding-top: 30%;
+    padding-top: 0px;
     padding-bottom: 10%;
-    color: #5A5A5A;
-    font-size: 4em;
+    color: white;
+    font-size: 5em;
   }
   .medium {
     height: 500px;
@@ -6673,6 +6674,9 @@ a {
   }
   .navbar-header {
     height: 70px;
+  }
+  .navbar-brand > img {
+    padding-left: 0px;
   }
 }
 /* Portrait tablet to landscape and desktop */

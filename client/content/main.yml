@@ -2,8 +2,8 @@ name: Secret Scoop
 galleryItems:
   -
     headline: THAI GELATO
-    subheadline: STAY TUNED FOR SUMMER FESTIVAL LOCATIONS!
-    paragraph: 
+    subheadline: TRY OUR NEW STICKY RICE FLAVOR THIS SUMMER
+    paragraph: Find us @ The Renegade Craft Fair Festival Pavilion, Fort Mason - July 18 & 19
     # button: Order now
     image: /content/img/Home_01.jpg
   # -
@@ -23,14 +23,14 @@ aboutItems:
   -
     headline: Meet the chef
     who: Funn Fisher
-    description: Handmade ice-cream with the flavors of thailand
+    description: Handmade ice-cream with the flavors of Thailand
     description_long: Order now
     image1: /content/img/About_02.jpg
     image2: /content/img/About_03.jpg
   -
     headline: Our Stories
     who: Secret Scoop
-    description: Handmade ice-cream with the flavors of thailand
+    description: Handmade ice-cream with the flavors of Thailand
     description_long: Order now
     image1: /content/img/About_04.jpg
     image2: /content/img/About_05.jpg
@@ -45,7 +45,7 @@ marketingItems:
   -
     headline: Get To Know Secret Scoop!
     caption: We create artistic catering events and bring ... to festivals
-    paragraph: Handmade ice-cream with the flavors of thailand
+    paragraph: Handmade ice-cream with the flavors of Thailand
     button: about
     image: /content/img/Home_05.jpg
 

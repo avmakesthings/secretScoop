@@ -1,10 +1,11 @@
 //Full width image
 .container-fluid
   .row.featurette-image.thick
-    img.full(src='/content/img/Flavor_01.jpg')
+    img.full.hidden-xs(src='/content/img/Flavor_01.jpg')
+    img.visible-xs(src='/content/img/Flavor_mobile.jpg')      
     .container
       .carousel-caption.imgtextcenter
-        h1.big.hidden-xs OUR FLAVORS
+        h1.big OUR FLAVORS
         //- p #{item.subheadline}
   hr.featurette-divider
 
