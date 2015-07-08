@@ -6,6 +6,7 @@ galleryItems:
     paragraph: Find us @ The Renegade Craft Fair Festival Pavilion, Fort Mason - July 18 & 19
     # button: Order now
     image: /content/img/Home_01.jpg
+    imagemobile: /content/img/Home_mobile.jpg
   # -
   #   headline: Catch us at Eat Real Festival 2014!
   #   subheadline: Handmade ice-cream with the flavors of thailand

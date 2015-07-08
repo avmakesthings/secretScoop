@@ -2,7 +2,7 @@
   .row
     .col-md-12
       img.full.hidden-xs(src='/content/img/About_01.jpg')
-      img.visible-xs(src='/content/img/About_mobile.jpg')        
+      img.visible-xs.img-mobile(src='/content/img/About_mobile.jpg')        
       .container
         .carousel-caption.imgtextcenter
           h1.big OUR STORY
@@ -44,10 +44,13 @@ hr.featurette-divider
 
 //FULL WIDTH IMAGE FROM SRC
 hr.featurette-divider
-.container-fluid(id=about) 
+.container-fluid.hidden-xs(id=about) 
   .row.thick
     img.full(src='/content/img/About_06.jpg')
 
+.container.visible-xs(id=about) 
+  .row.thick
+    img.img-mobile(src='/content/img/About_06.jpg')
 
 //- //FULL WIDTH IMAGE FROM YAML
 //- .container-fluid(id=about) 

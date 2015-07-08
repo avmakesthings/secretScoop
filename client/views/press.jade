@@ -4,18 +4,18 @@ block content
 	//Full width image
 	.container-fluid
 		.row.featurette-image.thick
-			img.full(src='/content/img/Press_01.jpg')
+			img.full.hidden-xs(src='/content/img/Press_01.jpg')
+			img.img-mobile.visible-xs(src='/content/img/Press_mobile.jpg')				
 		.container
 			.carousel-caption.imgtextcenter
-				h1.big.hidden-xs PRESS 
+				h1.big PRESS 
 				//- p Our Order page is coming soon. 
-	hr.featurette-divider.visible-lg
+	hr.featurette-divider.hidden-xs
 	
 	//Full width text
 	.container
 		.row.whitespace
 			.col-md-12.centered
-				h1.big.visible-xs PRESS 
 				h1.centered.hidden-xs Related Publications
 					h2
 						a(href='http://www.theexpatwoman.com/funn-fisher-founder-of-secret-scoop-thai-gelato/') TheExpatWoman.com

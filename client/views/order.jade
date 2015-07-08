@@ -4,10 +4,11 @@ block content
 	//Full width image
 	.container-fluid
 		.row.featurette-image.thick
-			img.full(src='/content/img/Order_01.jpg')
+			img.full.hidden-xs(src='/content/img/Order_01.jpg')
+			img.visable-xs(src='/content/img/Order_mobile.jpg')				
 		.container
 			.carousel-caption.imgtextcenter
-				h1.big.hidden-xs ORDER 
+				h1.big ORDER 
 				p.hidden-xs Our Order page is coming soon. 
 	hr.featurette-divider
 	
@@ -16,7 +17,11 @@ block content
 		.row.whitespace
 			.col-md-12.centered
 				//- h1.centered Coming Soon!
-				h1.big.visible-xs ORDER 
-				p.centered.para Please contact us directly via email at 
+				//- h1.big.visible-xs ORDER
+				h2.visible-xs Our Order page is coming soon. 				 
+				p.centered.para.hidden-xs Please contact us directly via email at 
 					a(href='mailto:secretscoopgelato@gmail.com') secretscoopgelato@gmail.com 
 					| or call (415)939.2832 to place an order. We'll be happy to help!
+				p.centered.visible-xs Please contact us directly via email at 
+					a(href='mailto:secretscoopgelato@gmail.com') secretscoopgelato@gmail.com 
+					| or call (415)939.2832 to place an order. We'll be happy to help!					

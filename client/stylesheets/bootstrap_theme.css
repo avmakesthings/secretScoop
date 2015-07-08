@@ -6471,6 +6471,10 @@ a {
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #ff9999;
 }
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  border-color: #fff;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
@@ -6623,6 +6627,54 @@ a {
     color: #fff;
     font-size: 4em;
   }
+  .img-mobile {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .row {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .col-md-4 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .col-md-6 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .col-md-8 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .col-md-12 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .pull-right {
+    padding-right: 20px;
+  }
+  .row.featurette {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    font-size: 20px;
+  }
+  .nav > li {
+    border-top: 2px solid #ff9999;
+  }
+  .navbar-nav > li > a {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -6651,10 +6703,13 @@ a {
     font-size: x-large;
   }
   h1 {
-    font-size: 2em;
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 1.3em;
   }
   p {
-    font-size: x-large;
+    font-size: large;
   }
   .full {
     max-height: 400px;
@@ -6664,7 +6719,7 @@ a {
     padding-top: 0px;
     padding-bottom: 10%;
     color: white;
-    font-size: 5em;
+    font-size: 4em;
   }
   .medium {
     height: 500px;
@@ -6677,6 +6732,12 @@ a {
   }
   .navbar-brand > img {
     padding-left: 0px;
+  }
+  .carousel {
+    height: 600px;
+  }
+  .carousel-caption {
+    top: 30%;
   }
 }
 /* Portrait tablet to landscape and desktop */
