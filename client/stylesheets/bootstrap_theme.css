@@ -929,6 +929,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  min-width: 100%!important;
 }
 .img-rounded {
   border-radius: 6px;
@@ -6311,6 +6312,9 @@ body {
 .vcenter {
   margin-top: 20%;
 }
+.event-pad {
+  padding: 0 0 0 0;
+}
 .resize {
   position: relative;
   width: 50%;
@@ -6401,8 +6405,8 @@ a {
   width: 100%;
 }
 .vertical-fill {
-  height: 100%;
-  width: auto;
+  min-width: 100%;
+  overflow-y: hidden;
 }
 .horizontal-fill {
   width: 100%;
@@ -6412,6 +6416,13 @@ a {
   border-radius: 0px;
   height: 300px;
   width: auto;
+}
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  min-width: 100%!important;
 }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -6797,13 +6808,6 @@ a {
     height: auto;
     min-width: 100%;
   }
-  .img-responsive,
-  .thumbnail > img,
-  .thumbnail a > img,
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-    min-width: 100%;
-  }
   .carousel-caption {
     top: 25%;
   }
@@ -6870,5 +6874,26 @@ a {
     padding-left: 7.5px;
     height: 600px;
     overflow: hidden;
+  }
+  .btn-lg,
+  .btn-group-lg > .btn {
+    font-size: 24px;
+  }
+  .centered.para {
+    padding: 0px 60px 30px 30px;
+  }
+  .img-circle {
+    height: 450px;
+  }
+}
+@media (min-width: 1900px) {
+  .container {
+    min-width: 1600px;
+  }
+  p {
+    font-size: 2em;
+  }
+  .navbar-brand > img {
+    height: 300%;
   }
 }

@@ -2,8 +2,8 @@ name: Secret Scoop
 galleryItems:
   -
     headline: THAI GELATO
-    subheadline: Try our new menu - Sweet Sticky Rice with Thai Gelato @ 
-    paragraph:                SF Street Food Festival, Pier 70 - Aug 15-16, 11 AM - 6 PM
+    # subheadline: Try our fall special - Sticky Rice with Thai Gelato
+    paragraph: Catch us at the Urban Epicurean Festival at Fort Mason on November 7/8 -11:30 AM to 6:30 PM. We'll be at Booth "S" in the the Festival Pavillion
     # button: Order now
     image: /content/img/Home_01.jpg
     imagemobile: /content/img/Home_mobile.jpg
@@ -49,7 +49,6 @@ marketingItems:
     paragraph: Handmade ice-cream with the flavors of Thailand
     button: about
     image: /content/img/Home_05.jpg
-
 
 serviceItem:
   type: We come to you!
