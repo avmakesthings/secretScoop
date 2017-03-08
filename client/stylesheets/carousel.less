@@ -11,8 +11,26 @@
 
 
 body {
+  margin: 30px;
   padding-bottom: 40px;
   color: #5a5a5a;
+}
+
+.hover-effect {
+  &:hover{
+    filter: hue-rotate(180deg);
+    -webkit-filter: hue-rotate(270deg);   
+  }
+}
+.brightness{
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
+}
+
+.nav-icon{
+  height: 30px; 
+  margin-top: 0px;
+  margin-left:10px;
 }
 
 
@@ -134,7 +152,7 @@ p.flavor-text{
 .shadow { 
  color: rgb(255, 146, 116);
  padding-top: 2.5%;
- font: bold 52px 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+ font: 40px 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
  text-shadow: 1px 1px #fe4902, 
               2px 2px #fe4902, 
               3px 3px #fe4902;
@@ -142,7 +160,7 @@ p.flavor-text{
 
 .big{
   font-size:6em;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 a{
@@ -525,6 +543,10 @@ font-size: 3em;
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px){
+  body{
+    margin: 10px;
+  }
+
   .carousel-caption p {
     font-size: 2em;
     color: grey;
@@ -713,6 +735,7 @@ font-size: 3em;
   }
   .footstyle {
     margin-top: 0px;
+    padding: 15px;
   }
   .carousel-caption {
   top: 30%;
@@ -785,6 +808,12 @@ font-size: 3em;
 
   .navbar-brand > img {
     height: 300%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footstyle{
+    padding: 10px;  
   }
 }
 

@@ -11,7 +11,7 @@
     each item, index in _mainInfo.galleryItems
       if index == 0 
         .item.active
-          img(src=item.image, alt='First slide' class="hidden-xs").img-tentacle
+          img.brightness(src=item.image, alt='First slide' class="hidden-xs").img-tentacle
           img(src=item.imagemobile, alt='First slide' class="visible-xs")          
           .container.hidden-phone
             .carousel-caption.imgtextbottom

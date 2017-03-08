@@ -3,7 +3,7 @@ galleryItems:
   -
     headline: THAI GELATO
     # subheadline: Try our fall special - Sticky Rice with Thai Gelato
-    paragraph: We are excited to announce that the first Secret Scoop Gelato shop will open at Berkeley Plaza in Downtown Berkeley this winter! Stay tuned for information around our grand opening. We look forward to serving you!
+    paragraph: Our first shop in Berkeley is now open. Stop in an try some Sticky Rice - Thai gelato!
     # button: Order now
     image: /content/img/Home_01.jpg
     imagemobile: /content/img/Home_mobile.jpg
@@ -92,7 +92,7 @@ contactItem:
     email: info@secretscoop.com
     facebook: thai gelato!
     twitter: thai gelato!
-    copyright: @ 2015 Secret Scoop
+    copyright: @ 2017 Secret Scoop
 
 
 

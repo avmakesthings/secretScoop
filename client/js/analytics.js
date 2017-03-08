@@ -8,7 +8,5 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-65914935-2', 'auto');
 ga('send', 'pageview');
 
-ga(‘set’, ‘&uid’, {{USER_ID}}); // Set the user ID using signed-in user_id.
+// ga(‘set’, ‘&uid’, {{USER_ID}}); // Set the user ID using signed-in user_id.
 
-//optimizely analytics
-<script src="//cdn.optimizely.com/js/3332920327.js"></script>
